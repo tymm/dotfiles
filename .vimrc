@@ -9,13 +9,15 @@ set smartindent
 set mouse=a
 
 set pastetoggle=<F10>
+filetype on
 filetype plugin on
 syntax on
 
 " Set tab to four spaces for python
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
-" The following three passages are from https://github.com/scy/dotscy/
+" The following three passages are from https://github.com/scy/dotscy/ and
+" partly modified by me
 " Show tabs and other things by default
 set list
 set listchars=tab:\|.,trail:_,extends:>,precedes:<,nbsp:_
@@ -55,6 +57,9 @@ let s .= "%{ShortFEnc()}" | " short file encoding
 let s .= '%{&bomb?"!":""} ' | " byte-order mark flag
 let s .= '%{&et?")".&ts."(":&ts} ' | " tab width, in )( if expandtabs is set
 let s .= "%r" | " readonly flag
+let s .= "%#warningmsg#" " show syntax errors detected by syntastic
+let s .= "%{SyntasticStatuslineFlag()}"
+let s .= "%*"
 let s .= "%*%=" | " right-justify after here
 let s .= "%9*%m%* " | " modified flag
 let s .= "0x%02B " | " hex value of current byte
@@ -65,3 +70,14 @@ let s .= "/%LL" | " number of lines
 set statusline=%!s
 " Always show a status line.
 set laststatus=2
+
+" Syntastic plugin options
+" Error window will be automatically opened and closed
+let g:syntastic_auto_loc_list=1 
+" When automatic syntax checking is done
+let g:syntastic_mode_map = { 'mode': 'active',
+                               \ 'active_filetypes': ['python','c','cpp', 'html','tex'],
+                               \ 'passive_filetypes': [] }
+" Syntax checking when buffers are first loaded as well as on saving
+let g:syntastic_check_on_open=1
+
