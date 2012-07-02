@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/boot/grub'
+let g:netrw_dirhist_2='/home/tymm/scripts'
+let g:netrw_dirhist_3='/home/tymm/src/railstesting/employees/app/views/employees'
+let g:netrw_dirhist_4='/home/tymm/src/railstesting/bookmarkmanager/app/views/bookmarks'
+let g:netrw_dirhist_5='/home/tymm/.vim'
+let g:netrw_dirhist_6='/home/tymm/.xmonad'
+let g:netrw_dirhist_7='/home/tymm/.vimperator'

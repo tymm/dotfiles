@@ -1,5 +1,12 @@
+" tpopes pathogen to manage plugins
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " Inserting indents automatically
 set smartindent
+
+" Mouse support
+set mouse=a
 
 set pastetoggle=<F10>
 filetype plugin on
