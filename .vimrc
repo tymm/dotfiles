@@ -13,6 +13,15 @@ filetype on
 filetype plugin on
 syntax on
 
+" Turn on Omni completion
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
+
 " Set tab to four spaces for python
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
