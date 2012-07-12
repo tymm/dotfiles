@@ -2,6 +2,9 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Don't be compatible with vi
+set nocompatible
+
 " Inserting indents automatically
 set smartindent
 
@@ -89,3 +92,9 @@ let g:syntastic_mode_map = { 'mode': 'active',
                                \ 'passive_filetypes': [] }
 " Syntax checking when buffers are first loaded as well as on saving
 let g:syntastic_check_on_open=1
+
+" Using SuperTab to get the omnicomplete popup menu
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+" You may also try the context value, which lets SuperTab decide which
+" completion mode to use and should play well with OmniCompletion:
+" let g:SuperTabDefaultCompletionType = "context"
