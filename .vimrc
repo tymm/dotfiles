@@ -76,8 +76,7 @@ set laststatus=2
 let g:syntastic_auto_loc_list=1 
 " When automatic syntax checking is done
 let g:syntastic_mode_map = { 'mode': 'active',
-                               \ 'active_filetypes': ['python','c','cpp', 'html','tex'],
+                               \ 'active_filetypes': ['python','c','cpp', 'html','tex','php'],
                                \ 'passive_filetypes': [] }
 " Syntax checking when buffers are first loaded as well as on saving
 let g:syntastic_check_on_open=1
-
