@@ -8,6 +8,10 @@ set nocompatible
 " Inserting indents automatically
 set smartindent
 
+" Set tabstop and shiftwidth to 4
+set tabstop=4
+set shiftwidth=4;
+
 " Mouse support (To insert from X use Shift+middle-click now)
 set mouse=a
 
