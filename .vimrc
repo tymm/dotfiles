@@ -8,8 +8,11 @@ set nocompatible
 " Inserting indents automatically
 set smartindent
 
-" Mouse support
+" Mouse support (To insert from X use Shift+middle-click now)
 set mouse=a
+
+" Set Tab length to 4
+set ts=4 
 
 set pastetoggle=<F10>
 filetype on
