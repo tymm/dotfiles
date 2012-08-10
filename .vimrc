@@ -8,6 +8,9 @@ set nocompatible
 " Inserting indents automatically
 set smartindent
 
+" For working in the sun
+set background=dark
+
 " Set tabstop and shiftwidth to 4
 set tabstop=4
 set shiftwidth=4
@@ -102,3 +105,9 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " You may also try the context value, which lets SuperTab decide which
 " completion mode to use and should play well with OmniCompletion:
 " let g:SuperTabDefaultCompletionType = "context"
+
+" automatically start NERDTree
+autocmd vimenter * NERDTree
+
+" automatically close NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
