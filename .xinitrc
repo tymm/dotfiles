@@ -6,4 +6,5 @@ if [ "$(xrandr | grep -oE "VGA1 connected")" = "VGA1 connected" ]; then xrandr -
 setxkbmap -option terminate:ctrl_alt_bksp
 xsetroot -cursor_name left_ptr
 setxkbmap -layout de
-exec xmonad 
+xrdb -merge ~/.Xresources
+exec xmonad
