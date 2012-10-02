@@ -35,6 +35,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+eval `dircolors $HOME/.dir_colors`
+
 # startx after booting
 if [[ -z "$DISPLAY" ]] && [[ $(tty) == /dev/tty1 ]]; then
         startx

@@ -23,6 +23,11 @@ filetype on
 filetype plugin on
 syntax on
 
+" Turn on Solarized color scheme
+syntax enable
+set background=dark
+colorscheme solarized
+
 " Turn on Omni completion
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -68,6 +73,7 @@ endfunction
 
 " Status line.
 let s = ""
+let s = "%{GitBranch()} " | " show Git branch
 let s .= "%<" | " truncate at the start
 let s .= "%f %8* " | " file name
 let s .= '%{&ft==""?"?":&ft} ' | " file type
