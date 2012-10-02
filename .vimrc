@@ -18,6 +18,9 @@ set shiftwidth=4
 " Mouse support (To insert from X use Shift+middle-click now)
 set mouse=a
 
+" normal backspace
+set backspace=indent,eol,start
+
 set pastetoggle=<F10>
 filetype on
 filetype plugin on
