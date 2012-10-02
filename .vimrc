@@ -118,5 +118,8 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " automatically start NERDTree
 autocmd vimenter * NERDTree
 
+" set width of NERDTree
+let NERDTreeWinSize=15
+
 " automatically close NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
