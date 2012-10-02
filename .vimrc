@@ -31,6 +31,22 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Configure tags
+set tags+=~/.vim/tags
+
+" Build tags of current project with CTRL+F12
+noremap <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
+inoremap <F12> <Esc>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
+
+" OmniCppComplete Options
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_MayCompleteDot = 1 " complete with .
+let OmniCpp_MayCompleteArrow = 1 " complete with ->
+let OmniCpp_MayCompleteScope = 1 " complete with ::
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+
 " Turn on Omni completion
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
