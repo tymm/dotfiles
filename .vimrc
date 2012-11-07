@@ -18,7 +18,7 @@ set shiftwidth=4
 " Mouse support (To insert from X use Shift+middle-click now)
 set mouse=a
 
-" normal backspace
+" Normal backspace
 set backspace=indent,eol,start
 
 set pastetoggle=<F10>
@@ -33,6 +33,12 @@ colorscheme solarized
 
 " Configure tags
 set tags+=~/.vim/tags
+
+" Toggle TagList on <F2>
+map <F2> :TlistToggle<CR>
+
+" Toggle NERDTree on <F3>
+map <F3> :NERDTreeToggle<CR>
 
 " Build tags of current project with CTRL+F12
 noremap <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
