@@ -44,6 +44,10 @@ nnoremap <C-q> :q<CR>
 inoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <C-t> :tabnew<CR>
 
+" Easier moving of code blocks
+vnoremap < <gv
+vnoremap > >gv
+
 " Toggle TagList on <F3>
 map <F3> :TlistToggle<CR>
 
