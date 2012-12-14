@@ -37,8 +37,12 @@ set tags+=~/.vim/tags
 " Shortcuts (some need 'stty -ixon -ixoff' before executing vim to work)
 inoremap <C-w> <Esc>:w<CR>
 nnoremap <C-w> :w<CR>
+
 inoremap <C-q> <Esc>:q<CR>
 nnoremap <C-q> :q<CR>
+
+inoremap <C-t> <Esc>:tabnew<CR>
+nnoremap <C-t> :tabnew<CR>
 
 " Toggle TagList on <F3>
 map <F3> :TlistToggle<CR>
