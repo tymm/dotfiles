@@ -47,3 +47,6 @@ export PATH=/usr/local/sbin:/home/tymm/bin:/opt/android-sdk/tools:/opt/eclipse:/
 
 # github and my dotfiles
 alias dotfiles='git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
+
+# turn off terminal control codes for vim
+alias vim="stty -ixon -ixoff ; vim"
