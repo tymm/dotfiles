@@ -34,15 +34,22 @@ colorscheme solarized
 " Configure tags
 set tags+=~/.vim/tags
 
-" Toggle TagList on <F2>
-map <F2> :TlistToggle<CR>
+" Shortcuts (some need 'stty -ixon -ixoff' before executing vim to work)
+inoremap <C-w> <Esc>:w<CR>
+nnoremap <C-w> :w<CR>
+inoremap <C-q> <Esc>:q<CR>
+nnoremap <C-q> :q<CR>
 
-" Toggle NERDTree on <F3>
-map <F3> :NERDTreeToggle<CR>
+" Toggle TagList on <F3>
+map <F3> :TlistToggle<CR>
+
+" Toggle NERDTree on <F2>
+map <F2> :NERDTreeToggle<CR>
 
 " Build tags of current project with CTRL+F12
 noremap <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
 inoremap <F12> <Esc>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
+
 
 " OmniCppComplete Options
 let OmniCpp_NamespaceSearch = 1
@@ -138,7 +145,7 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " let g:SuperTabDefaultCompletionType = "context"
 
 " automatically start NERDTree
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " set width of NERDTree
 let NERDTreeWinSize=20
