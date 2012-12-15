@@ -48,6 +48,9 @@ nnoremap <C-t> :tabnew<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+" Re-assigning leader key
+let mapleader = ","
+
 " Toggle TagList on <F3>
 map <F3> :TlistToggle<CR>
 
