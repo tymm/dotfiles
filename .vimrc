@@ -154,6 +154,10 @@ let g:syntastic_check_on_open=1
 
 " Using SuperTab to get the omnicomplete popup menu
 let g:SuperTabDefaultCompletionType = "context"
+" Fallback in case context completion fails
+let g:SuperTabContextDefaultCompletionType = "<c-p>"
+" Closing the preview window after completion
+let g:SuperTabClosePreviewOnPopupClose = 1
 
 " automatically start NERDTree
 " autocmd vimenter * NERDTree
