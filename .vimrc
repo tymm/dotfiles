@@ -44,8 +44,8 @@ nnoremap <C-w> :w<CR>
 inoremap <C-q> <Esc>:q<CR>
 nnoremap <C-q> :q<CR>
 
-inoremap <C-t> <Esc>:tabnew<CR>
-nnoremap <C-t> :tabnew<CR>
+inoremap <C-z> <Esc>:tabnew<CR>
+nnoremap <C-z> :tabnew<CR>
 
 " Easier moving of code blocks
 vnoremap < <gv
