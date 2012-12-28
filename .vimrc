@@ -11,6 +11,9 @@ set smartindent
 " For working in the sun
 set background=dark
 
+" Show line numbers
+set number
+
 " Set tabstop and shiftwidth to 4
 set tabstop=4
 set shiftwidth=4
@@ -150,10 +153,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
 let g:syntastic_check_on_open=1
 
 " Using SuperTab to get the omnicomplete popup menu
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-" You may also try the context value, which lets SuperTab decide which
-" completion mode to use and should play well with OmniCompletion:
-" let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = "context"
 
 " automatically start NERDTree
 " autocmd vimenter * NERDTree
