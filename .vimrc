@@ -37,6 +37,9 @@ colorscheme solarized
 " Configure tags
 set tags+=~/.vim/tags
 
+" Re-assigning leader key
+let mapleader = ","
+
 " Shortcuts (some need 'stty -ixon -ixoff' before executing vim to work)
 inoremap <C-w> <Esc>:w<CR>
 nnoremap <C-w> :w<CR>
@@ -47,15 +50,12 @@ nnoremap <C-q> :q<CR>
 inoremap <C-z> <Esc>:tabnew<CR>
 nnoremap <C-z> :tabnew<CR>
 
-inoremap <C-m> <Esc>:make<CR>
-nnoremap <C-m> :make<CR>
+inoremap <Leader>r <Esc>:make<CR>
+nnoremap <Leader>r :make<CR>
 
 " Easier moving of code blocks
 vnoremap < <gv
 vnoremap > >gv
-
-" Re-assigning leader key
-let mapleader = ","
 
 " Toggle TagList on <F3>
 map <F3> :TlistToggle<CR>
