@@ -47,6 +47,9 @@ nnoremap <C-q> :q<CR>
 inoremap <C-z> <Esc>:tabnew<CR>
 nnoremap <C-z> :tabnew<CR>
 
+inoremap <C-m> <Esc>:make<CR>
+nnoremap <C-m> :make<CR>
+
 " Easier moving of code blocks
 vnoremap < <gv
 vnoremap > >gv
@@ -85,6 +88,12 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 
 " Set tab to four spaces for python
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+
+" Automatically save file before running makeprg
+set autowrite
+
+" Execute python scripts with :make
+autocmd FileType python set makeprg=python\ %
 
 " The following three passages are from https://github.com/scy/dotscy/ and
 " partly modified by me
