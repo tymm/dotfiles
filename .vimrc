@@ -50,8 +50,8 @@ nnoremap <C-q> :q<CR>
 inoremap <C-z> <Esc>:tabnew<CR>
 nnoremap <C-z> :tabnew<CR>
 
-inoremap <Leader>r <Esc>:make<CR>
-nnoremap <Leader>r :make<CR>
+inoremap <Leader>x <Esc>:make<CR>
+nnoremap <Leader>x :make<CR>
 
 " Easier moving of code blocks
 vnoremap < <gv
