@@ -75,6 +75,11 @@ nmap k gk
 imap <C-e> <esc>$i<right>
 imap <C-a> <esc>0i
 
+" Set column width to 80
+set textwidth=80
+set fo=cqt
+set wm=0
+
 " OmniCppComplete Options
 let OmniCpp_NamespaceSearch = 1
 let OmniCpp_GlobalScopeSearch = 1
