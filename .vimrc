@@ -67,6 +67,13 @@ map <F2> :NERDTreeToggle<CR>
 noremap <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
 inoremap <F12> <Esc>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
 
+" Better way of moving around wrapped lines
+nmap j gj
+nmap k gk
+
+" Bash command line behaviour for CTRL+a and CTRL+e
+imap <C-e> <esc>$i<right>
+imap <C-a> <esc>0i
 
 " OmniCppComplete Options
 let OmniCpp_NamespaceSearch = 1
