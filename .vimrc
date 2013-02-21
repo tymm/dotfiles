@@ -80,6 +80,12 @@ set textwidth=80
 set fo=cqt
 set wm=0
 
+" Code folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
 " OmniCppComplete Options
 let OmniCpp_NamespaceSearch = 1
 let OmniCpp_GlobalScopeSearch = 1
