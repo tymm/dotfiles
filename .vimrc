@@ -21,6 +21,10 @@ set shiftwidth=4
 " Mouse support (To insert from X use Shift+middle-click now)
 set mouse=a
 
+" Better search
+set incsearch
+set hlsearch
+
 " Normal backspace
 set backspace=indent,eol,start
 
