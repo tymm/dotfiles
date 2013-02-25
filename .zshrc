@@ -50,3 +50,5 @@ alias vim="stty -ixon -ixoff ; vim"
 
 # vim mode
 bindkey -v
+bindkey '^R' history-incremental-search-backward
+bindkey -M viins 'jj' vi-cmd-mode
