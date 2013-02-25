@@ -47,3 +47,6 @@ export PATH=/usr/local/sbin:/home/tymm/bin:/opt/android-sdk/tools:/opt/eclipse:/
 
 # turn off terminal control codes for vim
 alias vim="stty -ixon -ixoff ; vim"
+
+# vim mode
+bindkey -v
