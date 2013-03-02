@@ -45,6 +45,13 @@ set tags+=~/.vim/tags
 let mapleader = ","
 
 " Shortcuts (some need 'stty -ixon -ixoff' before executing vim to work)
+
+" Navigate through splits
+inoremap <C-j> <Esc>:wincmd W<CR>
+nnoremap <C-j> :wincmd W<CR>
+inoremap <C-k> <Esc>:wincmd w<CR>
+nnoremap <C-k> :wincmd w<CR>
+
 inoremap <C-w> <Esc>:w<CR>
 nnoremap <C-w> :w<CR>
 
