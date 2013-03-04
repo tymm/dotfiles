@@ -87,7 +87,7 @@ imap <C-e> <esc>$i<right>
 imap <C-a> <esc>0i
 
 " Remap ESC key
-inoremap jj <ESC>
+inoremap jk <ESC>
 
 " Code folding
 set foldmethod=indent
