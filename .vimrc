@@ -94,6 +94,7 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
+set viewoptions=cursor,folds,slash,unix
 
 " OmniCppComplete Options
 let OmniCpp_NamespaceSearch = 1
