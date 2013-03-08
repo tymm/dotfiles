@@ -52,6 +52,12 @@ nnoremap <C-j> :wincmd W<CR>
 inoremap <C-k> <Esc>:wincmd w<CR>
 nnoremap <C-k> :wincmd w<CR>
 
+" Navigate through tabs
+inoremap <C-l> <Esc>gt<CR>
+nnoremap <C-l> gt<CR>
+inoremap <C-h> <Esc>gT<CR>
+nnoremap <C-h> gT<CR>
+
 inoremap <C-w> <Esc>:w<CR>
 nnoremap <C-w> :w<CR>
 
