@@ -37,10 +37,7 @@ source $ZSH/oh-my-zsh.sh
 
 eval `dircolors $HOME/.dir_colors`
 
-# startx after booting
-if [[ -z "$DISPLAY" ]] && [[ $(tty) == /dev/tty1 ]]; then
-        startx
-fi
+export LC_ALL="en_US.UTF-8"
 
 # modify path according to my needs
 export PATH=/usr/local/sbin:/home/tymm/bin:/opt/android-sdk/tools:/opt/eclipse:/opt/android-sdk/platform-tools:$PATH

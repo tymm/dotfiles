@@ -7,4 +7,5 @@ setxkbmap -option terminate:ctrl_alt_bksp
 xsetroot -cursor_name left_ptr
 setxkbmap -layout de
 xrdb -merge ~/.Xresources
+xset b off
 exec xmonad
