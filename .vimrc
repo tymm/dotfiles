@@ -78,7 +78,7 @@ vnoremap > >gv
 map <F3> :TlistToggle<CR>
 
 " Toggle NERDTree on <F2>
-map <F2> :NERDTreeToggle<CR>
+map <F2> :NERDTreeTabsToggle<CR>
 
 " Build tags of current project with CTRL+F12
 noremap <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
