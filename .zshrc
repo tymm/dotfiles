@@ -40,7 +40,7 @@ eval `dircolors $HOME/.dir_colors`
 export LC_ALL="en_US.UTF-8"
 
 # modify path according to my needs
-export PATH=/usr/local/sbin:/home/tymm/bin:/opt/android-sdk/tools:/opt/eclipse:/opt/android-sdk/platform-tools:$PATH
+export PATH=/usr/local/sbin:/home/tymm/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:$PATH
 
 # turn off terminal control codes for vim
 alias vim="stty -ixon -ixoff ; vim"
