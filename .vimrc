@@ -64,8 +64,8 @@ nnoremap <C-w> :w<CR>
 inoremap <C-q> <Esc>:q<CR>
 nnoremap <C-q> :q<CR>
 
-inoremap <C-z> <Esc>:tabnew<CR>
-nnoremap <C-z> :tabnew<CR>
+inoremap <Leader>w <Esc>:tabnew<CR>
+nnoremap <Leader>w :tabnew<CR>
 
 inoremap <Leader>x <Esc>:make<CR>
 nnoremap <Leader>x :make<CR>
