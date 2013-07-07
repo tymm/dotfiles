@@ -8,6 +8,9 @@ set nocompatible
 " Inserting indents automatically
 set smartindent
 
+" Use 256 colors
+set t_Co=256
+
 " For working in the sun
 set background=dark
 
