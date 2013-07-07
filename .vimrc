@@ -36,10 +36,13 @@ filetype on
 filetype plugin on
 syntax on
 
-" Turn on Solarized color scheme
+" Enable Solarized color scheme
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Set color scheme for vim-airline (statusbar)
+let g:airline_theme='light'
 
 " Configure tags
 set tags+=~/.vim/tags
