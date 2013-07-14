@@ -50,8 +50,7 @@ set tags+=~/.vim/tags
 " Re-assigning leader key
 let mapleader = ","
 
-" Shortcuts (some need 'stty -ixon -ixoff' before executing vim to work)
-
+" Shortcuts (some need a 'stty -ixon -ixoff' in the terminal before executing vim)
 " Navigate through splits
 inoremap <C-j> <Esc>:wincmd W<CR>
 nnoremap <C-j> :wincmd W<CR>
@@ -163,3 +162,7 @@ let NERDTreeWinSize=20
 
 " automatically close NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Show tabs and other things by default
+set list
+set listchars=tab:\|.,trail:_,extends:>,precedes:<,nbsp:_
