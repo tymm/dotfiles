@@ -49,3 +49,6 @@ alias vim="stty -ixon -ixoff ; vim"
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 bindkey -M viins 'jk' vi-cmd-mode
+
+# 256 color support for tmux
+alias tmux="TERM=screen-256color-bce tmux"
