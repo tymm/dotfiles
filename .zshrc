@@ -62,4 +62,4 @@ bindkey '^j' history-beginning-search-backward
 bindkey '^k' history-beginning-search-forward
 
 # automatically starting tmux (not sure if thats the best way to do it)
-tmux 2>1
+if [ "$TMUX" = "" ]; then tmux; fi
