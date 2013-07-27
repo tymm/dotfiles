@@ -52,3 +52,11 @@ bindkey -M viins 'jk' vi-cmd-mode
 
 # 256 color support for tmux
 alias tmux="TERM=screen-256color-bce tmux"
+
+# change behavior of arrow key completion
+bindkey '\e[A' history-beginning-search-backward
+bindkey '\e[B' history-beginning-search-forward
+
+# map <CTRL+j/k> to auto-completion
+bindkey '^j' history-beginning-search-backward
+bindkey '^k' history-beginning-search-forward
