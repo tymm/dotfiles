@@ -166,3 +166,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " Show tabs and other things by default
 set list
 set listchars=tab:\|.,trail:_,extends:>,precedes:<,nbsp:_
+
+" Disable swapfiles
+set noswapfile
