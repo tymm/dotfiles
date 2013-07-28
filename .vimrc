@@ -172,3 +172,7 @@ set noswapfile
 
 " Delete until end of line with D
 nnoremap D d$
+
+" Show a search result in the middle of the screen
+nnoremap n nzzzv
+nnoremap N Nzzzv
