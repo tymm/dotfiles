@@ -169,3 +169,6 @@ set listchars=tab:\|.,trail:_,extends:>,precedes:<,nbsp:_
 
 " Disable swapfiles
 set noswapfile
+
+" Delete until end of line with D
+nnoremap D d$
