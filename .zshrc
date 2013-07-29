@@ -63,3 +63,6 @@ bindkey '^k' history-beginning-search-forward
 
 # automatically starting tmux (not sure if thats the best way to do it)
 if [ "$TMUX" = "" ]; then tmux; fi
+
+# load history-substring-search plugin
+source ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
