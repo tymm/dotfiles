@@ -57,12 +57,12 @@ export TERM=screen-256color-bce
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
 
-# map <CTRL+j/k> to auto-completion
-bindkey '^j' history-beginning-search-backward
-bindkey '^k' history-beginning-search-forward
-
 # automatically starting tmux (not sure if thats the best way to do it)
 if [ "$TMUX" = "" ]; then tmux; fi
 
 # load history-substring-search plugin
 source ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
+
+# map <CTRL+j/k> to history-substring-search auto-completion
+bindkey '^j' history-substring-search-up
+bindkey '^k' history-substring-search-down
