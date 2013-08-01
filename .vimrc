@@ -80,12 +80,12 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Toggle TagList on <F3>
-map <F3> :TlistToggle<CR>
+map <F10> :TlistToggle<CR>
 
 " Toggle NERDTree on <F2>
-map <F2> :NERDTreeTabsToggle<CR>
+map <F9> :NERDTreeTabsToggle<CR>
 
-" Build tags of current project with CTRL+F12
+" Build tags of current project with F12
 noremap <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
 inoremap <F12> <Esc>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
 
@@ -94,8 +94,8 @@ nmap j gj
 nmap k gk
 
 " Bash command line behaviour for CTRL+a and CTRL+e
-imap <C-e> <esc>$i<right>
-imap <C-a> <esc>0i
+inoremap <C-a> <esc>I
+inoremap <C-e> <esc>A
 
 " Remap ESC key
 inoremap jk <ESC>
