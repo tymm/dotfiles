@@ -176,3 +176,6 @@ nnoremap D d$
 " Show a search result in the middle of the screen
 nnoremap n nzzzv
 nnoremap N Nzzzv
+
+" Disable auto commenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
