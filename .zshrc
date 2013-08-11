@@ -66,3 +66,6 @@ source ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zs
 # map <CTRL+j/k> to history-substring-search auto-completion
 bindkey '^j' history-substring-search-up
 bindkey '^k' history-substring-search-down
+
+# Aliases
+source ~/.aliases
