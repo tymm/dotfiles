@@ -37,3 +37,9 @@
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/bundle/vim-togglelist"]
+	path = .vim/bundle/vim-togglelist
+	url = https://github.com/milkypostman/vim-togglelist.git
+[submodule ".vim/bundle/rainbow_parentheses"]
+	path = .vim/bundle/rainbow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim

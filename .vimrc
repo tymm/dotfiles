@@ -11,9 +11,6 @@ set smartindent
 " Use 256 colors
 set t_Co=256
 
-" For working in the sun
-set background=dark
-
 " Show line numbers
 set number
 
@@ -179,3 +176,9 @@ nnoremap N Nzzzv
 
 " Disable auto commenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Rainbow parentheses always on
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
