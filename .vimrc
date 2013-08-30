@@ -182,3 +182,9 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Automatically adjust height of quickfix window
+au FileType qf call AdjustWindowHeight(3, 10)
+function! AdjustWindowHeight(minheight, maxheight)
+	exe max([min([line("$"), a:maxheight]), a:minheight]) . "wincmd _"
+endfunction
