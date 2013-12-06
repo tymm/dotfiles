@@ -29,8 +29,8 @@ set hlsearch
 set backspace=indent,eol,start
 
 set pastetoggle=<F10>
-filetype on
-filetype plugin on
+filetype off
+filetype plugin indent on
 syntax on
 
 " Enable Solarized color scheme
@@ -188,3 +188,12 @@ au FileType qf call AdjustWindowHeight(3, 10)
 function! AdjustWindowHeight(minheight, maxheight)
 	exe max([min([line("$"), a:maxheight]), a:minheight]) . "wincmd _"
 endfunction
+
+" Vundle (plugin manager)
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle (required)
+Bundle 'gmarik/vundle'
+
+" My bundles here:
+Bundle 'Valloric/YouCompleteMe'
