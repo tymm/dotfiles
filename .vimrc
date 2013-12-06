@@ -122,6 +122,9 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
+" Make Eclim and YCM play nice together
+let g:EclimCompletionMethod = 'omnifunc'
+
 " Set tab to four spaces for python
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
