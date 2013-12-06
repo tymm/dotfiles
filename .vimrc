@@ -200,3 +200,5 @@ Bundle 'gmarik/vundle'
 
 " My bundles here:
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'SirVer/ultisnips'
+Bundle 'ervandew/supertab'
