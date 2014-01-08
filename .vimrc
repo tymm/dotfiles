@@ -99,6 +99,9 @@ inoremap <C-e> <esc>A
 " Remap ESC key
 inoremap jk <ESC>
 
+" Copy to clipboard with CTRL+C
+vmap <C-C> "+y
+
 " Code folding
 set foldmethod=indent
 set foldnestmax=10
