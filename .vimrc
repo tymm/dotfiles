@@ -19,7 +19,9 @@ set tabstop=4
 set shiftwidth=4
 
 " Mouse support (To insert from X use Shift+middle-click now)
-set mouse=a
+if has('mouse')
+	set mouse=a
+endif
 
 " Better search
 set incsearch
