@@ -2,6 +2,23 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Vundle (plugin manager)
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle (required)
+Bundle 'gmarik/vundle'
+
+" Plugins here:
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'SirVer/ultisnips'
+Bundle 'ervandew/supertab'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'bling/vim-airline'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'jistr/vim-nerdtree-tabs'
+
 " Don't be compatible with vi
 set nocompatible
 
@@ -196,17 +213,6 @@ au FileType qf call AdjustWindowHeight(3, 10)
 function! AdjustWindowHeight(minheight, maxheight)
 	exe max([min([line("$"), a:maxheight]), a:minheight]) . "wincmd _"
 endfunction
-
-" Vundle (plugin manager)
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" let Vundle manage Vundle (required)
-Bundle 'gmarik/vundle'
-
-" Plugins here:
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'SirVer/ultisnips'
-Bundle 'ervandew/supertab'
 
 " With this UltiSnips will work with YouCompleteMe (http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme)
 function! g:UltiSnips_Complete()
