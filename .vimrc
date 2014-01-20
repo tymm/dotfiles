@@ -18,6 +18,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'bling/vim-bufferline'
 
 " Don't be compatible with vi
 set nocompatible
