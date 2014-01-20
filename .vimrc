@@ -19,6 +19,9 @@ Bundle 'bling/vim-airline'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'bling/vim-bufferline'
+Bundle 'wincent/Command-T'
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/syntastic'
 
 " Don't be compatible with vi
 set nocompatible
