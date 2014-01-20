@@ -1,5 +1,9 @@
-Quickly install with:
+# Install
+## Command-T
+    cd .vim/bundle/Command-T/ruby/command-t && ruby extconf.rb && make
 
-    git clone git://github.com/msanders/snipmate.vim.git
-	cd snipmate.vim
-	cp -R * ~/.vim
+## YouCompleteMe
+    cd .vim/bundle/YouCompleteMe && ./install.sh --clang-completer
+
+## Loading plugins via Vundle
+Just typing `:BundleInstall` in Vim.
