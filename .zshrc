@@ -69,3 +69,7 @@ bindkey '^k' history-substring-search-down
 
 # Aliases
 source ~/.aliases
+
+# Virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
