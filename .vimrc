@@ -86,8 +86,8 @@ nnoremap <C-u> gT<CR>
 inoremap <C-w> <Esc>:w<CR>
 nnoremap <C-w> :w<CR>
 
-inoremap <C-q> <Esc>:q!<CR>
-nnoremap <C-q> :q!<CR>
+inoremap <C-q> <Esc>:q<CR>
+nnoremap <C-q> :q<CR>
 
 inoremap <Leader>w <Esc>:tabnew<CR>
 nnoremap <Leader>w :tabnew<CR>
