@@ -48,6 +48,9 @@ endif
 set incsearch
 set hlsearch
 
+" No swap files
+set noswapfile
+
 " Normal backspace
 set backspace=indent,eol,start
 
