@@ -51,6 +51,8 @@ set hlsearch
 " No swap files
 set noswapfile
 
+set relativenumber
+
 " Normal backspace
 set backspace=indent,eol,start
 
