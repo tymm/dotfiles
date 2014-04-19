@@ -26,9 +26,6 @@ Bundle 'scrooloose/syntastic'
 " Don't be compatible with vi
 set nocompatible
 
-" Inserting indents automatically
-set smartindent
-
 " Use 256 colors
 set t_Co=256
 
@@ -262,3 +259,6 @@ let g:rbpt_colorpairs = [
 	\ ['darkred',     'DarkOrchid3'],
 	\ ['red',         'firebrick3'],
 	\ ]
+
+" Use _ as a word delimiter
+set iskeyword-=_
