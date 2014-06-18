@@ -42,6 +42,9 @@ export LC_ALL="en_US.UTF-8"
 # modify path according to my needs
 export PATH=/usr/local/sbin:/home/tymm/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:$PATH
 
+# define GOPATH
+export GOPATH=/home/tymm/.go
+
 # turn off terminal control codes for vim
 alias vim="stty -ixon -ixoff ; vim"
 
