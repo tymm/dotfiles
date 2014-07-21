@@ -100,7 +100,7 @@ nnoremap <Leader>x :make<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-" Toggle TagList on <F3>
+" Toggle TagList on <F10>
 map <F10> :TlistToggle<CR>
 
 " Toggle NERDTree on <F2>
@@ -261,3 +261,16 @@ let g:rbpt_colorpairs = [
 
 " Use _ as a word delimiter
 set iskeyword-=_
+
+" Spellchecking (activate automatically for certain files)
+au BufNewFile,BufRead,BufEnter   *.md      setlocal spell    spelllang=en_us
+au BufNewFile,BufRead,BufEnter   *.txt     setlocal spell    spelllang=de_de
+au BufNewFile,BufRead,BufEnter   README    setlocal spell    spelllang=en_us
+
+" Toggle german spellchecking with F5
+imap <F5> <C-o>:setlocal spell! spelllang=de_de<CR>
+map <F5> :setlocal spell! spelllang=de_de<CR>
+
+" Toggle english spellchecking with F2
+imap <F6> <C-o>:setlocal spell! spelllang=en_us<CR>
+map <F6> :setlocal spell! spelllang=en_us<CR>
