@@ -1,29 +1,29 @@
-" tpopes pathogen to manage plugins
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
-" Vundle (plugin manager)
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" let Vundle manage Vundle (required)
-Bundle 'gmarik/vundle'
-
-" Plugins here:
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'SirVer/ultisnips'
-Bundle 'ervandew/supertab'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'bling/vim-airline'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'wincent/Command-T'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/syntastic'
-
 " Don't be compatible with vi
 set nocompatible
+filetype off
+
+" Vundle (plugin manager)
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle (required)
+Plugin 'gmarik/Vundle.vim'
+
+" Plugins here:
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'ervandew/supertab'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'wincent/Command-T'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+
+call vundle#end()
+filetype plugin indent on
 
 " Use 256 colors
 set t_Co=256
