@@ -21,6 +21,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'wincent/Command-T'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
+Plugin 'Lokaltog/vim-easymotion'
 
 call vundle#end()
 filetype plugin indent on
@@ -43,6 +44,7 @@ endif
 " Better search
 set incsearch
 set hlsearch
+
 
 " No swap files
 set noswapfile
@@ -274,3 +276,6 @@ map <F5> :setlocal spell! spelllang=de_de<CR>
 " Toggle english spellchecking with F2
 imap <F6> <C-o>:setlocal spell! spelllang=en_us<CR>
 map <F6> :setlocal spell! spelllang=en_us<CR>
+
+" Easymotion bidirectional search
+map <Leader>f <Plug>(easymotion-bd-w)
