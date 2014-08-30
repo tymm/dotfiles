@@ -230,7 +230,7 @@ function! g:UltiSnips_Complete()
 		if pumvisible()
 			return "\<C-n>"
 		else
-			call UltiSnips_JumpForwards()
+			call UltiSnips#JumpForwards()
 			if g:ulti_jump_forwards_res == 0
 				return "\<TAB>"
 			endif
@@ -281,3 +281,6 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 
 " Easymotion bidirectional search
 map <Leader>f <Plug>(easymotion-bd-w)
+
+" Set filetype to tex for all *.tex files (it would be plaintex otherwise)
+let g:tex_flavor = "latex"
