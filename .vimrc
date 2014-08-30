@@ -23,6 +23,7 @@ Plugin 'wincent/Command-T'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'tpope/vim-eunuch'
 
 call vundle#end()
 filetype plugin indent on
