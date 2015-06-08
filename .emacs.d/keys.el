@@ -1,0 +1,8 @@
+(define-key evil-normal-state-map (kbd "C-j") 'evil-window-left)
+(define-key evil-normal-state-map (kbd "C-k") 'evil-window-right)
+(define-key evil-normal-state-map (kbd "C-q") 'kill-emacs)
+(define-key evil-insert-state-map (kbd "C-q") 'kill-emacs)
+(define-key evil-normal-state-map (kbd "C-w") 'save-buffer)
+(define-key evil-insert-state-map (kbd "C-w") 'save-buffer)
+(setq key-chord-two-keys-delay 0.5)
+(key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
