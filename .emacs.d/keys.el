@@ -6,3 +6,5 @@
 (define-key evil-insert-state-map (kbd "C-w") 'save-buffer)
 (setq key-chord-two-keys-delay 0.5)
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
+(evil-leader/set-leader ",")
+(evil-leader/set-key "f" 'projectile-find-file)

@@ -1,5 +1,5 @@
 (defvar prelude-packages
-  '(evil solarized-theme key-chord)
+  '(evil solarized-theme key-chord projectile grizzl evil-leader)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
