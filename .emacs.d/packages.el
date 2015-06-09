@@ -2,7 +2,6 @@
 (key-chord-mode 1)
 
 (projectile-global-mode)
-(setq projectile-completion-system 'grizzl)
 
 (global-evil-leader-mode)
 
