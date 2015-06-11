@@ -7,3 +7,7 @@
 
 (require 'evil)
 (evil-mode 1)
+
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
