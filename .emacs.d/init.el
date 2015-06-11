@@ -19,6 +19,7 @@
 
 (load-user-file "prelude-packages.el")
 (load-user-file "packages.el")
+(load-user-file "config.el")
 (load-user-file "keys.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
