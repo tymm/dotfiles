@@ -2,3 +2,4 @@
 (require 'evil)
 (require 'auto-complete)
 (require 'auto-complete-config)
+(require 'python-mode)
