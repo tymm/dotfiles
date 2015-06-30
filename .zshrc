@@ -65,10 +65,15 @@ if [ "$TMUX" = "" ]; then tmux; fi
 
 # load history-substring-search plugin
 source ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
+source ~/.zsh-directory-history/directory-history.plugin.zsh
 
 # map <CTRL+j/k> to history-substring-search auto-completion
 bindkey '^j' history-substring-search-up
 bindkey '^k' history-substring-search-down
+
+# Bind up/down arrow keys to navigate through your history
+bindkey '\e[A' directory-history-search-backward
+bindkey '\e[B' directory-history-search-forward
 
 # Aliases
 source ~/.aliases
