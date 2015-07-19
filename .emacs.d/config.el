@@ -3,9 +3,18 @@
 (global-evil-leader-mode)
 (evil-mode 1)
 (ac-config-default)
-;; Show line numbers
-(global-linum-mode t)
-(setq linum-format "%4d  ")
+;; Show relative line numbers
+(global-relative-line-numbers-mode)
+(setq relative-line-numbers-format #'abs-rel-numbers)
+
+(defun abs-rel-numbers (offset)
+  (if (= offset 0)
+      ;; current line
+      (format "%4d  " (line-number-at-pos))
+    ;; not the current line
+    (format "%4d  " (abs offset))
+        ))
+
 ;; Set up python auto completion
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)

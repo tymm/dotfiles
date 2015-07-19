@@ -4,3 +4,4 @@
 (require 'auto-complete-config)
 (require 'python-mode)
 (require 'scala-mode2)
+(require 'relative-line-numbers)
