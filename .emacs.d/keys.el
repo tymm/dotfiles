@@ -8,3 +8,9 @@
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
 (evil-leader/set-leader ",")
 (evil-leader/set-key "f" 'projectile-find-file)
+
+;; Emulate some of VIM's ALT+$key behavior to exit insert mode and execute $key in normal mode
+(defun alt-j () (interactive) (evil-normal-state) (evil-next-line))
+(defun alt-k () (interactive) (evil-normal-state) (evil-previous-line))
+(define-key evil-insert-state-map (kbd "M-j") 'alt-j)
+(define-key evil-insert-state-map (kbd "M-k") 'alt-k)
