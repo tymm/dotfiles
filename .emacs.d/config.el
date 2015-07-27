@@ -20,3 +20,7 @@
 (setq jedi:complete-on-dot t)
 ;; Set up python mode
 (add-to-list 'auto-mode-alist '("\.py\'" . python-mode))
+
+;; Enable and configure the mode-line
+(sml/setup)
+(setq sml/theme 'dark)

@@ -1,5 +1,5 @@
 (defvar prelude-packages
-  '(evil solarized-theme key-chord projectile evil-leader flx-ido auto-complete auto-complete-nxml jedi python-mode scala-mode2 relative-line-numbers)
+  '(evil solarized-theme key-chord projectile evil-leader flx-ido auto-complete auto-complete-nxml jedi python-mode scala-mode2 relative-line-numbers smart-mode-line)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
