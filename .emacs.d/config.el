@@ -24,3 +24,13 @@
 ;; Enable and configure the mode-line
 (sml/setup)
 (setq sml/theme 'dark)
+
+(lexical-let ((default-color (cons (face-background 'mode-line) (face-foreground 'mode-line))))
+(add-hook 'post-command-hook
+  (lambda () (let ((color (cond ((minibufferp) default-color)
+    ((evil-insert-state-p) '("#006fa0" . "#ffffff"))
+    ((evil-visual-state-p)   '("#e80000" . "#ffffff"))
+    (t default-color))))
+    (set-face-background 'mode-line (car color))
+    (set-face-foreground 'mode-line (cdr color))))))
+
