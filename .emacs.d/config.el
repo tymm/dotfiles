@@ -7,6 +7,9 @@
 (global-relative-line-numbers-mode)
 (setq relative-line-numbers-format #'abs-rel-numbers)
 
+;; Hide menubar
+(menu-bar-mode -1)
+
 (defun abs-rel-numbers (offset)
   (if (= offset 0)
       ;; current line
