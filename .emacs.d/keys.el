@@ -12,5 +12,7 @@
 ;; Emulate some of VIM's ALT+$key behavior to exit insert mode and execute $key in normal mode
 (defun alt-j () (interactive) (evil-normal-state) (evil-next-line))
 (defun alt-k () (interactive) (evil-normal-state) (evil-previous-line))
+(defun alt-o () (interactive) (evil-normal-state) (evil-open-below nil))
 (define-key evil-insert-state-map (kbd "M-j") 'alt-j)
 (define-key evil-insert-state-map (kbd "M-k") 'alt-k)
+(define-key evil-insert-state-map (kbd "M-o") 'alt-o)
