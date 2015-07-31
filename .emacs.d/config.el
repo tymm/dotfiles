@@ -34,3 +34,5 @@
     (set-face-background 'mode-line (car color))
     (set-face-foreground 'mode-line (cdr color))))))
 
+;; Enable ensime
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)

@@ -5,3 +5,4 @@
 (require 'python-mode)
 (require 'scala-mode2)
 (require 'relative-line-numbers)
+(require 'ensime)
