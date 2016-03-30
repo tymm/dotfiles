@@ -80,4 +80,4 @@ source ~/.aliases
 
 # Virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /etc/bash_completion.d/virtualenvwrapper
