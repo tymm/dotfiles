@@ -1,5 +1,6 @@
 #!/bin/sh
 
+chsh -s /bin/zsh
 git submodule update --init --recursive
 cd ~
 ln -s .dotfiles/.emacs.d .emacs.d
