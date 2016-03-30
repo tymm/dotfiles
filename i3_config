@@ -30,7 +30,7 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvt
 
 # start i3lock
-bindsym $mod+Shift+z exec i3lock
+bindsym $mod+Shift+y exec i3lock
 
 # kill focused window
 bindsym $mod+Shift+c kill
