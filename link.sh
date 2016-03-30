@@ -1,5 +1,6 @@
 #!/bin/sh
 
+git submodule update --init --recursive
 cd ~
 ln -s .dotfiles/.emacs.d .emacs.d
 ln -s .dotfiles/.oh-my-zsh .oh-my-zsh
@@ -13,4 +14,5 @@ ln -s .dotfiles/.vimrc .vimrc
 ln -s .dotfiles/.xsession .xsession
 ln -s .dotfiles/.zshrc .zshrc
 mkdir -p .config/i3 && ln -s ~/.dotfiles/i3_config ~/.config/i3/config
+vim +PluginInstall +qall
 
