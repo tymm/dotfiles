@@ -32,6 +32,9 @@ bindsym $mod+Return exec urxvt
 # start i3lock
 bindsym $mod+Shift+y exec i3lock
 
+# shutdown laptop
+bindsym $mod+Shift+n exec "systemctl poweroff"
+
 # kill focused window
 bindsym $mod+Shift+c kill
 
