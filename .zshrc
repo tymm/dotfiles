@@ -63,8 +63,7 @@ bindkey '\e[B' history-beginning-search-forward
 # automatically starting tmux (not sure if thats the best way to do it)
 if [ "$TMUX" = "" ]; then tmux; fi
 
-# load history-substring-search plugin
-source ~/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh
+# Load directory-history plugin which includes the history-substring-search plugin
 source ~/.zsh-directory-history/directory-history.plugin.zsh
 
 # map <CTRL+j/k> to history-substring-search auto-completion
@@ -81,3 +80,6 @@ source ~/.aliases
 # Virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 source /etc/bash_completion.d/virtualenvwrapper
+
+# Android
+export ANDROID_HOME=/opt/android-sdk/
