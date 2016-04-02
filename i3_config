@@ -35,6 +35,9 @@ bindsym $mod+Shift+y exec i3lock
 # shutdown laptop
 bindsym $mod+Shift+n exec "systemctl poweroff"
 
+# restart laptop
+bindsym $mod+Shift+b exec "systemctl reboot"
+
 # kill focused window
 bindsym $mod+Shift+c kill
 
