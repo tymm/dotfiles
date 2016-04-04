@@ -27,7 +27,7 @@ font pango:DejaVu Sans Mono 14
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec "urxvt -e tmux -2"
 
 # start i3lock
 bindsym $mod+Shift+y exec i3lock

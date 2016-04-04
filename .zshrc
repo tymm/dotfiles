@@ -60,9 +60,6 @@ export TERM=screen-256color-bce
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
 
-# automatically starting tmux (not sure if thats the best way to do it)
-if [ "$TMUX" = "" ]; then tmux; fi
-
 # Load directory-history plugin which includes the history-substring-search plugin
 source ~/.zsh-directory-history/directory-history.plugin.zsh
 
