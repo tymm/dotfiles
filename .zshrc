@@ -56,20 +56,16 @@ bindkey -M viins 'jk' vi-cmd-mode
 # 256 color support for tmux
 export TERM=screen-256color-bce
 
-# change behavior of arrow key completion
-bindkey '\e[A' history-beginning-search-backward
-bindkey '\e[B' history-beginning-search-forward
-
 # Load directory-history plugin which includes the history-substring-search plugin
 source ~/.zsh-directory-history/directory-history.plugin.zsh
 
-# map <CTRL+j/k> to history-substring-search auto-completion
+# Map <CTRL+j/k> to history-substring-search auto-completion
 bindkey '^j' history-substring-search-up
 bindkey '^k' history-substring-search-down
 
-# Bind up/down arrow keys to navigate through your history
-bindkey '\e[A' directory-history-search-backward
-bindkey '\e[B' directory-history-search-forward
+# Navigate through history in vim mode
+bindkey -M vicmd 'k' directory-history-search-forward
+bindkey -M vicmd 'j' directory-history-search-backward
 
 # Aliases
 source ~/.aliases
