@@ -14,6 +14,7 @@ ln -s .dotfiles/.tmux.conf .tmux.conf
 ln -s .dotfiles/.vimrc .vimrc
 ln -s .dotfiles/.xsession .xsession
 ln -s .dotfiles/.zshrc .zshrc
+sudo ln -s ~/.dotfiles/xorg.conf.d/20-natural-scrolling.conf /usr/share/X11/xorg.conf.d/20-natural-scrolling.conf
 mkdir -p .config/i3 && ln -s ~/.dotfiles/i3_config ~/.config/i3/config
 vim +PluginInstall +qall
 
