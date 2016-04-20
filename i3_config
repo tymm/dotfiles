@@ -173,3 +173,6 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 
 # Start networkmanager
 exec --no-startup-id nm-applet
+
+# Use capslock as escape
+exec --no-startup-id "xcape -e 'Control_L=Escape'"
