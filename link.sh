@@ -15,6 +15,7 @@ ln -s .dotfiles/.vimrc .vimrc
 ln -s .dotfiles/.xsession .xsession
 ln -s .dotfiles/.zshrc .zshrc
 sudo ln -s ~/.dotfiles/xorg.conf.d/20-natural-scrolling.conf /usr/share/X11/xorg.conf.d/20-natural-scrolling.conf
+sudo ln -s ~/.dotfiles/trackpoint.rules /etc/udev/rules.d/trackpoint.rules
 mkdir -p .config/i3 && ln -s ~/.dotfiles/i3_config ~/.config/i3/config
 vim +PluginInstall +qall
 
